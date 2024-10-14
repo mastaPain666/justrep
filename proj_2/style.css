@@ -1,0 +1,39 @@
+body {
+    background-color: #e1d4c9;
+}
+*{
+    font-family: inter;
+}
+.wrapper {
+       width: 1360px;
+       padding-top: 20px;
+       padding-bottom: 40px;
+       gap: 100px;     
+}
+nav {
+    padding-right: 40px;
+    padding-left: 40px;
+}
+nav > a {
+    text-decoration: none;
+    
+}
+h1 {
+    font-size: 72px;
+    font-weight: 600px;
+    line-height: 105%;
+    color: #e1d4c9;
+}
+h1 > em {
+    color: #b0907a;
+}
+.hero  {
+    background-image: url(source/img-hero.jpg);
+    max-width: fill;
+    border-radius: 40px;
+    height: hug;
+    padding: 100px;
+}
+.hero > p {
+    color: #e1d4c9;
+}
