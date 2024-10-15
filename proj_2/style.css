@@ -1,22 +1,50 @@
 body {
     background-color: #e1d4c9;
+    margin: 0px auto;
 }
 *{
     font-family: inter;
 }
 .wrapper {
-       width: 1360px;
-       padding-top: 20px;
-       padding-bottom: 40px;
-       gap: 100px;     
-}
-nav {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 40px;
     padding-right: 40px;
     padding-left: 40px;
+    row-gap: 100px;
 }
-nav > a {
+.container {
+       width: 1360px;
+       gap: 100px;
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;   
+       align-items: center;  
+}
+nav {
+    max-width: 1360px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    align-items: center;
+}
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.nav-menu > a {
     text-decoration: none;
-    
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
+}
+.menu > a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+    font-weight: 600;
 }
 h1 {
     font-size: 72px;
@@ -29,11 +57,52 @@ h1 > em {
 }
 .hero  {
     background-image: url(source/img-hero.jpg);
-    max-width: fill;
     border-radius: 40px;
-    height: hug;
     padding: 100px;
 }
-.hero > p {
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    width: 530px;
+}
+.hero-container > h1 {
+    size: 72px;
+    margin: 0px auto;
+    font-weight: 600;
+}
+.hero-container > p {
     color: #e1d4c9;
+    margin: 0px auto;
+    size: 16px;
+    font-weight: 400;
+}
+.hero-container > a {
+    width: 44px;
+    background-color: #e1d4c9;
+    padding-top: 20px;
+    padding-right: 78px;
+    padding-bottom: 20px;
+    padding-left: 78px;
+    text-decoration: none;
+    border-radius: 100px;
+    color: black;
+    font-family: inter;
+    font-weight: 600;
+}
+.slider {
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    align-items: center;
+}
+.slider > h2 {
+    font-size: 60px;
+}
+.slider > h2 > em {
+    color: #b0907a;
+}
+.slider-btn {
+    width: 60px;
+    height: 60px;
 }

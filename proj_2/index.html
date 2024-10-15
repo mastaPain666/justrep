@@ -10,49 +10,58 @@
     <div class="wrapper">
         <header>
             <nav>
-                <img src="source/logo.png" alt="Coffee logo" width="100px" height="60px">
-                    <a href="">Favorite coffee</a>
-                    <a href="">About</a>
-                    <a href="">Mobile app</a>
-                    <a href="">Contact us</a>
-                    <a href="#">Menu</a>
-                    <img src="source/coffee-cup.png" alt="coffee-cup">
-                
+                <div class="container">
+                    <div>
+                        <img src="source/logo.png" alt="Coffee logo" width="100px" height="60px">
+                    </div>
+                    <div class="nav-menu">
+                        <a href="">Favorite coffee</a>
+                        <a href="">About</a>
+                        <a href="">Mobile app</a>
+                        <a href="">Contact us</a>
+                    </div>
+                    <div class="menu">
+                        <a href="#">Menu</a>
+                        <img src="source/coffee-cup.png" alt="coffee-cup">
+                    </div>
+                </div>
             </nav>
-    
-        </header>
-    
-        <main>
             <section class="hero">
-                <h1><em>Enjoy</em> premium coffee at our charming cafe</h1>
-                <p>With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
-                <img src="source/button-primary.png" alt="">
+                    <div class="hero-container">
+                        <h1><em>Enjoy</em> premium coffee at our charming cafe</h1>
+                        <p>With its inviting atmosphere and delicious coffee options, the Coffee House Resource is a popular destination for coffee lovers and those seeking a warm and inviting space to enjoy their favorite beverage.</p>
+                        <a href="">Menu</a>
+                    </div>
             </section>
-            <section>
+        </header>
+        <main>
+            <section class="slider">
                 <h2>Choose your <em>favorite</em> coffee</h2>
-                <img src="source/btn-prev.png" alt="btn-prev">
-                <div>
-                    <img src="source/coffee-slider-1.png" alt="coffee-slider1">
-                    <h3>S’mores Frappuccino</h3>
-                    <p>This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
-                    <p><strong>$5.50</strong></p>
-                </div>
-                <div>
-                    <img src="source/coffee-slider-2.png" alt="coffee-slider2">
-                    <h3>Caramel Macchiato</h3>
-                    <p>Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam</p>
-                    <p><strong>$5.00</strong></p>
-                </div>
-                <div>
-                    <img src="source/coffee-slider-3.png" alt="coffee-slider3">
-                    <h3>Ice coffee</h3>
-                    <p>A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
-                    <p><strong>$4.50</strong></p>
+                <img src="source/btn-prev.png" alt="btn-prev" class="slider-btn btn-prev">
+                <div class="row-slider">
+                    <div class="slider-item">
+                        <img src="source/coffee-slider-1.png" alt="coffee-slider1">
+                        <h3>S’mores Frappuccino</h3>
+                        <p>This new drink takes an espresso and mixes it with brown sugar and cinnamon before being topped with oat milk.</p>
+                        <p><strong>$5.50</strong></p>
+                    </div>
+                    <div class="slider-item">
+                        <img src="source/coffee-slider-2.png" alt="coffee-slider2">
+                        <h3>Caramel Macchiato</h3>
+                        <p>Fragrant and unique classic espresso with rich caramel-peanut syrup, with cream under whipped thick foam</p>
+                        <p><strong>$5.00</strong></p>
+                    </div>
+                    <div class="slider-item">
+                        <img src="source/coffee-slider-3.png" alt="coffee-slider3">
+                        <h3>Ice coffee</h3>
+                        <p>A popular summer drink that tones and invigorates. Prepared from coffee, milk and ice.</p>
+                        <p><strong>$4.50</strong></p>
+                    </div>
                 </div>
                 <button></button>
                 <button></button>
                 <button></button>
-                <img src="source/btn-next.png" alt="btn-next">
+                <img src="source/btn-next.png" alt="btn-next" class="slider-btn btn-next">
             </section>
             <section>
                 <h2>Resource is <em>the perfect and cozy place</em> where you can enjoy a variety of hot beverages, relax, catch up with friends, or get some work done.</h2>
@@ -95,6 +104,7 @@
             </address>
         </footer>
     </div>
+        
 
 </body>
 </html>
