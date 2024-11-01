@@ -1,7 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Ruge+Boogie&display=swap');
+
+em {
+    font-style: italic;
+}
+
 body {
+    display: flex;
+    justify-content: center;
     background-color: #e1d4c9;
     margin: 0px auto;
-    font-family: inter;
+    font-family: Inter;
     color: #403F3D;
 }
 
@@ -54,14 +63,14 @@ nav {
 .nav-menu>a {
     text-decoration: none;
     font-size: 16px;
-    color: black;
+    color: #403F3D;
     font-weight: 600;
 }
 
 .menu>a {
     text-decoration: none;
     font-size: 16px;
-    color: black;
+    color: #403F3D;
     font-weight: 600;
 }
 
@@ -74,6 +83,7 @@ h1 {
 
 h1>em {
     color: #b0907a;
+    font-style: normal;
 }
 
 .hero {
@@ -127,8 +137,14 @@ h1>em {
     text-align: center;
 }
 
+h2 > span {
+    font-style: italic;
+}
+
 h2>em {
+    font-family: inter;
     color: #b0907a;
+    font-style: italic;
 }
 
 .slider {
@@ -150,6 +166,7 @@ h2>em {
     display: flex;
     position: relative;
     overflow: hidden;
+    transition: transform 0.5s ease-in-out;
 }
 
 .slide {
@@ -157,6 +174,7 @@ h2>em {
     display: flex;
     justify-content: center;
     box-sizing: border-box;
+    min-width: 100%;
 }
 
 .slide-1 {}
@@ -191,7 +209,6 @@ h2>em {
 }
 
 .description-text {
-    font-family: Inter;
     font-size: 16px;
     font-weight: 400;
     line-height: 24px;
@@ -199,7 +216,6 @@ h2>em {
 }
 
 .description-price {
-    font-family: Inter;
     font-size: 24px;
     font-weight: 600;
     line-height: 30px;
@@ -279,6 +295,15 @@ footer h2 {
 
 .offer {
     display: flex;
+    flex-direction: row;
+    gap: 100px;
+    /* width: 530px; */
+    justify-content: space-between;
+    align-items: center;
+}
+
+.offer-header {
+    display: flex;
     flex-direction: column;
     gap: 40px;
     width: 530px;
@@ -288,12 +313,13 @@ footer h2 {
     display: flex;
     flex-direction: column;
     color: #e1d4c9;
-
+    font-style: normal;
+    width: 530px;
+    gap: 40px;
 }
 
 .contacts-info p {
     font-size: 24px;
-    font-family: inter;
 }
 
 .contacts {
@@ -301,6 +327,13 @@ footer h2 {
     flex-direction: column;
     color: #e1d4c9;
     gap: 16px;
+}
+
+.contacts-header {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
 }
 
 .contacts a {
