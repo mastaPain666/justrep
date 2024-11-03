@@ -1,8 +1,9 @@
-let btn_prev = document.querySelector('.btn-prev');
-let btn_next = document.querySelector('.btn-next');
-let slidePosition = 0;
+import {prevBtn} from "./modules/sliderControl.js"
+import {nextBtn} from "./modules/sliderControl.js"
+import {moveSliderLeft} from "./modules/sliderControl.js"
+import {moveSliderRight} from "./modules/sliderControl.js"
 
-function slider() {
-    
-}
 
+
+prevBtn.addEventListener ('click', moveSliderLeft)
+nextBtn.addEventListener ('click', moveSliderRight)

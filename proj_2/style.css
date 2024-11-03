@@ -67,6 +67,10 @@ nav {
     font-weight: 600;
 }
 
+.menu:hover {
+    border-bottom: 2px solid #403F3D;
+}
+
 .menu>a {
     text-decoration: none;
     font-size: 16px;
@@ -112,7 +116,9 @@ h1>em {
     font-weight: 400;
 }
 
-.hero-container>a {
+.hero-menu-btn {
+    display: flex;
+    justify-content: center;
     width: 44px;
     background-color: #e1d4c9;
     padding-top: 20px;
@@ -124,6 +130,26 @@ h1>em {
     color: black;
     font-family: inter;
     font-weight: 600;
+    gap: 8px;
+    color: #403F3D;
+    cursor: pointer;
+}
+
+.hero-menu-btn>img {
+    display: none;
+}
+
+.hero-menu-btn:hover img{
+    display: flex;
+}
+
+.hero-menu-btn a {
+    text-decoration: none;
+    color: #403F3D;
+}
+
+.hero-container>a:hover:first-child {
+    display: block;
 }
 
 .favorite-coffe {
@@ -225,11 +251,22 @@ h2>em {
 .btn-prev {
     position: absolute;
     left: 40px;
+    cursor: pointer;
+}
+
+.btn-prev>img:hover {
+    content: url(/source/btn-slider-hover.png);
+    transform: rotate(180deg)
 }
 
 .btn-next {
     position: absolute;
     right: 40px;
+    cursor: pointer;
+}
+
+.btn-next>img:hover {
+    content: url(/source/btn-slider-hover.png);
 }
 
 .controls {
@@ -265,6 +302,14 @@ h2>em {
 .download-app {
     display: flex;
     gap: 100px;
+}
+
+.download-appstore img:hover{
+    content: url(/source/appstore-hover.png);
+}
+
+.download-googleplay img:hover{
+    content: url(/source/googleplay-hover.png);
 }
 
 .app-offer {
@@ -309,6 +354,10 @@ footer h2 {
     width: 530px;
 }
 
+.contacts-btn {
+  
+}
+
 .contacts-info {
     display: flex;
     flex-direction: column;
@@ -350,4 +399,13 @@ footer h2 {
     display: flex;
     gap: 8px;
     font-size: 16px;
+    width: 182px;
+}
+
+.link:hover{
+    border-bottom: 2px solid #e1d4c9;
+}
+
+.link:last-child {
+    width: 262px;
 }
