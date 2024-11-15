@@ -1,16 +1,24 @@
 let tasks = [];
 
-task = {
-    name: '',
-    completed: false
+
+function task(name, completed) {
+    this.name = name,
+    this.completed = false
 }
+// task = {
+//     name: '',
+//     completed: false
+// }
 
 function pushNewTask(name) {
     if (name === '') { console.log('У задачи должно быть название') }
-    task = JSON.parse(JSON.stringify(task))
-    task.name = name
-    tasks.push(task)
-    console.log(`Задача ${name} добавлена`)
+    else {
+        let newTask = new task(name)
+        tasks.push(newTask)
+    // task = JSON.parse(JSON.stringify(task))
+    // task.name = name
+    // tasks.push(task)
+    console.log(`Задача ${name} добавлена`)}
 }
 pushNewTask('1')
 pushNewTask('2')
@@ -25,7 +33,7 @@ function findTask(name) {
 }
 
 function checkTask(taskName) {
-    if (tasks.includes(findTask(taskName)) === true) {
+    if (tasks.includes(findTask(taskName))) {
         return findTask(taskName)
     } else {
 
@@ -69,5 +77,10 @@ let allNameTasks = tasks.map(function(task) {
     return string
 })
 
-console.log(allNameTasks)
+function showAllTasks () {
+    console.log(allNameTasks)
+}
+
+showAllTasks()
+
 
