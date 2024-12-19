@@ -1,0 +1,20 @@
+{
+  "name": "hm-module-8",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "this homework module 8. Node.js, npm",
+  "dependencies": {
+    "bash": "^0.0.1",
+    "express": "^4.21.2",
+    "parcel-bundler": "^1.12.5",
+    "pg": "^8.13.1"
+  },
+  "devDependencies": {
+    "parcel": "^2.13.3"
+  }
+}
